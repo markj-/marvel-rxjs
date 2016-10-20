@@ -1,10 +1,6 @@
 import { Observable } from 'rxjs';
 import { prop, filter, compose, gt, nth } from 'ramda';
-
-const log = (value) => {
-  console.log(value);
-  return value;
-};
+import log from 'utility/log';
 
 const getResults = prop('results');
 const getData = prop('data');
@@ -39,4 +35,4 @@ const filteredComics$ =
     .map(getLt100Pages)
     .map(getLt4Dollars);
 
-filteredComics$.subscribe((comics) => console.log(comics));
+filteredComics$.subscribe(log);

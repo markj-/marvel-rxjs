@@ -14,6 +14,7 @@ System.config({
   },
 
   map: {
+    "utility": "app/utility",
     "ramda": "npm:ramda@0.22.1",
     "rxjs": "npm:rxjs@5.0.0-rc.1",
     "typescript": "npm:typescript@1.8.10",
