@@ -6,12 +6,15 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+
   packages: {
     "/app": {
       "defaultExtension": "ts"
     }
   },
+
   map: {
+    "ramda": "npm:ramda@0.22.1",
     "rxjs": "npm:rxjs@5.0.0-rc.1",
     "typescript": "npm:typescript@1.8.10",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -56,6 +59,9 @@ System.config({
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "vm": "github:jspm/nodelibs-vm@0.1.0"
+    },
+    "npm:ramda@0.22.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:rxjs@5.0.0-rc.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
