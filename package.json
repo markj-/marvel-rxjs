@@ -1,0 +1,24 @@
+{
+  "name": "marvel-rxjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "jspm": {
+    "dependencies": {
+      "rxjs": "npm:rxjs@^5.0.0-rc.1"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  },
+  "devDependencies": {
+    "jspm": "^0.16.46",
+    "live-server": "^1.1.0"
+  }
+}
