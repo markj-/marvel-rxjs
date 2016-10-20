@@ -24,8 +24,8 @@ const response$ =
 const getComicsFromResponse = compose(getResults, getData);
 const getLt100Pages = filter(compose(lt100, getPageCount));
 
-const filteredComics$ =
-  response$.map(getComicsFromResponse)
-    .map(getLt100Pages);
+const comics$ = response$.map(getComicsFromResponse)
+
+const filteredComics$ = comics$.map(getLt100Pages);
 
 filteredComics$.subscribe((comics) => console.log(comics));
