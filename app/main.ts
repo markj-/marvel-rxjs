@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { prop, filter, map, compose, gt, nth, join, partial } from 'ramda';
+import { prop, filter, map, compose, gt, nth, join } from 'ramda';
 import h from 'hyperscript';
 import hh from 'hyperscript-helpers';
 import log from 'utility/log';
