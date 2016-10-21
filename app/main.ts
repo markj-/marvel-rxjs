@@ -25,7 +25,7 @@ const request$ = Observable.of(apiUrl);
 
 const response$ =
   request$
-    .flatMap(() => Observable.fromPromise(fetch(apiUrl)))
+    .flatMap((url) => Observable.fromPromise(fetch(url)))
     .flatMap((response) => Observable.fromPromise(response.json()));
 
 const comics$ = response$.map(getComicsFromResponse)
