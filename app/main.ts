@@ -16,17 +16,17 @@ const lt4 = gt(4);
 const apiKey = 'fc67721c305c84f50f7c6646c9b8d9d0';
 const apiUrl = `http://gateway.marvel.com/v1/public/comics?apikey=${apiKey}`;
 
+const getComicsFromResponse = compose(getResults, getData);
+const getComicPrice = compose(getPrice, getFirst, getPrices);
+const getLt100Pages = filter(compose(lt100, getPageCount));
+const getLt4Dollars = filter(compose(lt4, getComicPrice));
+
 const request$ = Observable.of(apiUrl);
 
 const response$ =
   request$
     .flatMap(() => Observable.fromPromise(fetch(apiUrl)))
     .flatMap((response) => Observable.fromPromise(response.json()));
-
-const getComicsFromResponse = compose(getResults, getData);
-const getComicPrice = compose(getPrice, getFirst, getPrices);
-const getLt100Pages = filter(compose(lt100, getPageCount));
-const getLt4Dollars = filter(compose(lt4, getComicPrice));
 
 const comics$ = response$.map(getComicsFromResponse)
 
