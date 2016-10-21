@@ -11,6 +11,8 @@
   "license": "ISC",
   "jspm": {
     "dependencies": {
+      "hyperscript": "npm:hyperscript@^2.0.2",
+      "hyperscript-helpers": "npm:hyperscript-helpers@^3.0.1",
       "ramda": "npm:ramda@^0.22.1",
       "rxjs": "npm:rxjs@^5.0.0-rc.1"
     },

@@ -14,10 +14,12 @@ System.config({
   },
 
   map: {
-    "utility": "app/utility",
+    "hyperscript": "npm:hyperscript@2.0.2",
+    "hyperscript-helpers": "npm:hyperscript-helpers@3.0.1",
     "ramda": "npm:ramda@0.22.1",
     "rxjs": "npm:rxjs@5.0.0-rc.1",
     "typescript": "npm:typescript@1.8.10",
+    "utility": "app/utility",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -49,6 +51,13 @@ System.config({
       "ieee754": "npm:ieee754@1.1.8",
       "isarray": "npm:isarray@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:class-list@0.1.1": {
+      "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:hyperscript@2.0.2": {
+      "browser-split": "npm:browser-split@0.0.0",
+      "class-list": "npm:class-list@0.1.1"
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
